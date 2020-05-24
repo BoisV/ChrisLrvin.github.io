@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Muse","version":"8.0.0-rc.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://yoursite.com/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'en'
+  };
+</script>
+
+  <title>Hexo</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Hexo</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/25/equation/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/05/25/equation/" class="post-title-link" itemprop="url">正规方程(normal equation)</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2020-05-25 00:37:48 / Modified: 00:39:20" itemprop="dateCreated datePublished" datetime="2020-05-25T00:37:48+08:00">2020-05-25</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>线性回归模型求拟合函数的最优参数，一般有两种方法：</p>
+<ul>
+<li>梯度下降法，过程是对损失函数的每个参数求偏导，通过迭代一步步更新，直至收敛到局部或全局最小值，从而得到最优参数。</li>
+<li>正规方程，过程是对于一个损失函数，将其对参数求导，得到导函数并将其值置为0，从而解出最优参数。</li>
+</ul>
+<p>下面是正规方程的推导：</p>
+<p>线性回归模型：</p>
+<script type="math/tex; mode=display">
+f(x)=w_0 + w_1x_1+w_2x_2+\dots+w_dx_d\\</script><p>即：</p>
+<script type="math/tex; mode=display">
+f(x)=w_0x_0 + w_1x_1+w_2x_2+\dots+w_dx_d\\
+Note:\ \ \ x_0 = 1</script><p>写成向量形式：</p>
+<script type="math/tex; mode=display">
+f(x^i)=W^Tx^i\\
+Note: x^i表示第i个样本</script><p>其中：</p>
+<script type="math/tex; mode=display">
+\begin{array}{l}
+\begin{array}{lcr}
+X=
+\begin{bmatrix}
+x^1_0 & x^1_1 & \dots & x^1_d\\
+x^2_0 & x^2_1 & \dots & x^2_d\\
+x^3_0 & x^3_1 & \dots & x^3_d\\
+\vdots & \vdots & \vdots & \vdots\\
+x^m_0 & x^m_1 & \dots & x^m_d
+\end{bmatrix}
+&
+W=\begin{bmatrix} w_0\\w_1\\w_2\\\vdots\\w_d \end{bmatrix}
+&
+Y=\begin{bmatrix} y_1\\y_2\\y_3\\\vdots\\y_m \end{bmatrix}
+\end{array}\\
+Note:\ d为特征个数，m为样本个数，x^i_0 = 1
+\end{array}</script><p>损失函数采用均方误差法，有：w</p>
+<script type="math/tex; mode=display">
+\begin{array}{l}
+\begin{array}{lcl}
+J(w)  & = & \frac1{2m}\sum_{i=1}^{m}(f(x^i)-y^i)^2\\
+& = & 
+\frac1{2m}\sum_{i=1}^m (w_0x^i_0 + w_1x^i_1 + w_2x^i_2 + \dots + w_dx^i_d - y^i)^2
+\end{array}\\
+Note:\ x^i_0 = 1
+\end{array}</script><p>$J(w)$ 对 $w$ 求导得</p>
+<script type="math/tex; mode=display">
+\begin{array}{l}
+\begin{array}{lcl}
+\frac{\partial{J(w_0)}}{\partial w_0} & = & \frac1m\sum_{i=1}^m(w_0 + w_1x^i_1+w_2x^i_2+\dots+w_dx^i_d - y_i)\\
+\frac{\partial{J(w_1)}}{\partial w_1} & = & \frac1m\sum_{i=1}^m(w_0 + w_1x^i_1+w_2x^i_2+\dots+w_dx^i_d - y_i)x^i_1\\
+\frac{\partial{J(w_2)}}{\partial w_2} & = & \frac1m\sum_{i=1}^m(w_0 + w_1x^i_1+w_2x^i_2+\dots+w_dx^i_d - y_i)x^i_2\\
+& \vdots &\\
+\frac{\partial{J(w_d)}}{\partial w_d} & = & \frac1m\sum_{i=1}^m(w_0 + w_1x^i_1+w_2x^i_2+\dots+w_dx^i_d - y_i)x^i_d\\
+\end{array}\\
+Note:\ \ \  x^i表示第i个样本的特征值向量，x^i_d表示第i个样本的第d个特征值
+\end{array}</script><p>即</p>
+<script type="math/tex; mode=display">
+\begin{array}{lcl}
+m\frac{\partial{J(W)}}{\partial W} 
+& = &
+\begin{bmatrix}
+\frac{\partial{J(w_0)}}{\partial w_0}\\
+\frac{\partial{J(w_1)}}{\partial w_1}\\
+\frac{\partial{J(w_2)}}{\partial w_2}\\
+\vdots\\
+\frac{\partial{J(w_d)}}{\partial w_d}
+\end{bmatrix}\\
+& = &
+\begin{bmatrix}
+\sum_{i=1}^m(W^Tx^i - y_i)x^i_0\\
+\sum_{i=1}^m(W^Tx^i - y_i)x^i_1\\
+\sum_{i=1}^m(W^Tx^i - y_i)x^i_2\\
+\vdots\\
+\sum_{i=1}^m(W^TX^i - y_i)x^i_d
+\end{bmatrix}\\
+& = &
+\begin{bmatrix}
+x^1_0 & x^1_1 & x^1_2 & \dots & x^1_d \\
+x^2_0 & x^2_1 & x^2_2 & \dots & x^2_d \\
+x^3_0 & x^3_1 & x^3_2 & \dots & x^3_d \\
+\vdots & \vdots & \vdots & \vdots & \vdots\\
+x^m_0 & x^m_1 & x^m_2 & \dots & x^m_d 
+\end{bmatrix}
+\begin{bmatrix}
+W^Tx^1-y_1 \\
+W^Tx^2-y_2  \\
+W^Tx^3-y_3 \\
+\vdots \\
+W^Tx^m-y_m \\
+\end{bmatrix}\\
+& = &
+X^T(XW-Y)
+\end{array}</script><p>当 $X^TX$ 可逆时，令 $m \frac{\partial{J(W)}}{\partial W} = 0$ 得 </p>
+<script type="math/tex; mode=display">
+W = (X^TX)^{-1}X^TY</script><p>此时，线性回归模型变为</p>
+<script type="math/tex; mode=display">
+f(x^i)=Y^TX(XX^T)^{-1}x^i</script><p>由于 $f(x^i)$ 是一个数，数的转置还是它本身，所以即</p>
+<script type="math/tex; mode=display">
+f(x^i)=(x^i)^T(X^TX)^{-1}X^TY</script><p>当 $X^TX$ 不可逆时，常见做法是引入正则化项。</p>
+<script type="math/tex; mode=display">
+J(w)=\frac1{2m}\left[ \sum_{i=1}^m(f(x^i)-y^i)^2+\lambda\sum_{j=1}^nw_j^2 \right]\\
+Note: \lambda:正则化参数\ n为特征数量等于d</script><p>令 $m \frac{\partial{J(W)}}{\partial W} = 0$ 得</p>
+<script type="math/tex; mode=display">
+W = (X^TX+\lambda
+\begin{bmatrix}
+0 & & & & \\
+& 1 & & & \\
+& & 1 & & \\
+& & & \ddots & \\
+& & & & 1\ \\
+\end{bmatrix}
+)^{-1} X^T Y\\
+Note: \ \ if \ \lambda>0</script><p><strong>梯度下降与正规方程的比较：</strong></p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>正规方程</th>
+<th>梯度下降</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>不需要</td>
+<td>需要选择学习率</td>
+</tr>
+<tr>
+<td>需要计算如果特征数量n较大则运算代价大，因为矩阵逆的计算时间复杂度为 ，通常来说当n小于10000 时还是可以接受的</td>
+<td>一次运算得出，当特征数量n大时也能较好适用</td>
+</tr>
+<tr>
+<td>只适用于线性模型，不适合逻辑回归模型等其他模型</td>
+<td>适用于各种类型的模型</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/25/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/05/25/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-05-25 00:33:49" itemprop="dateCreated datePublished" datetime="2020-05-25T00:33:49+08:00">2020-05-25</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">John Doe</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+</body>
+</html>
